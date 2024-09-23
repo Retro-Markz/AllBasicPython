@@ -99,3 +99,17 @@ print(x)
 x= "Mark"
 print("now the variable x has the value of: " )
 print(x)
+
+
+#CONSTANT
+
+#syntax
+
+NAME_CONSTANT = "valueX"
+
+#examples
+
+PI = int(3.1416)
+ERROR_MSG = str('invalid user')
+VALID_USER_NAME = str("admin")
+
