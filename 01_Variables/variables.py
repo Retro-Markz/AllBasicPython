@@ -91,3 +91,11 @@ def myfunc():
 myfunc()
 
 print("Python is " + h)
+
+#variables are dynamic, so you can change te value and type of a variable in time
+
+print("variable x initial values is: " )
+print(x)
+x= "Mark"
+print("now the variable x has the value of: " )
+print(x)
