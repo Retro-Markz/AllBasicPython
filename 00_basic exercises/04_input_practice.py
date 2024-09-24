@@ -36,7 +36,7 @@ print()
 
 recipeName = str(input("Recipe Name: "))
 recipeName = recipeName.upper()
-
+ 
 print()
 
 ingridients = []
