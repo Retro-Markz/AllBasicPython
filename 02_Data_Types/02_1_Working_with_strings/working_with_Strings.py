@@ -60,3 +60,30 @@ print(concat)
 res = f'hello {b}'
 print(res)
 
+name = 'Mark'
+age = 37
+
+dev = f'hi, i\'m {name} and i\'m {age} years old'
+print(dev)
+
+ #upper()
+ 
+var1 = "hello mates"
+ 
+print(f'original var: {var1}')
+ 
+upperVar = var1.upper()
+ 
+print(f'Upper the var: {upperVar}')
+
+#lower()
+lowerVar = var1.lower()
+
+print(f'Upper the var: {lowerVar}')
+
+#strip()
+
+spacedVar = " hello Mates "
+print(f'spaced string: {spacedVar}')
+print(f'space removed string: {spacedVar.strip()}')
+
