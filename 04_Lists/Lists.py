@@ -407,3 +407,123 @@ thislist.sort()
 print(thislist)
 print( )
 
+# Sort the list numerically:
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+print()
+
+# To sort descending, use the keyword argument reverse = True:
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+print()
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(reverse=True)
+print(thislist)
+print()
+
+# Customize Sort Function
+# You can also customize your own function by using the keyword argument key = function.
+
+# The function will return a number that will be used to sort the list (the lowest number first):
+
+
+def myfunc(n):
+  return abs(n - 50)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
+print()
+
+# Case Insensitive Sort
+# By default the sort() method is case sensitive, resulting in all capital letters being sorted before lower case letters:
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort()
+print(thislist)
+
+
+# Luckily we can use built-in functions as key functions when sorting a list.
+
+# So if you want a case-insensitive sort function, use str.lower as a key function:
+
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower)
+print(thislist)
+print()
+
+# Reverse Order
+# What if you want to reverse the order of a list, regardless of the alphabet?
+
+# The reverse() method reverses the current sorting order of the elements.
+
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print(thislist)
+print()
+
+# Copy a List
+# You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, and changes made in list1 will automatically also be made in list2.
+
+# You can use the built-in List method copy() to copy a list.
+
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+print()
+
+# Use the list() method
+# Another way to make a copy is to use the built-in method list().
+
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+print()
+
+
+# Use the slice Operator
+# You can also make a copy of a list by using the : (slice) operator.
+
+thislist = ["apple", "banana", "cherry", "pineapple"]
+mylist = thislist[:]
+print(mylist)
+
+print()
+
+
+# Join Two Lists
+# There are several ways to join, or concatenate, two or more lists in Python.
+
+# One of the easiest ways are by using the + operator.
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)
+print()
+
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+for x in list2:
+  list1.append(x)
+
+print(list1)
+print()
+
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+list1.extend(list2)
+print(list1)
+print()
+
+
