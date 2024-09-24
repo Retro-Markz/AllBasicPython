@@ -31,3 +31,34 @@ print()
 #------- RECIPE 
 
 
+print("**** Recipe ****")
+print()
+
+recipeName = str(input("Recipe Name: "))
+recipeName = recipeName.upper()
+
+print()
+
+ingridients = []
+for i in range(10):
+     element = input("give some ingredients, separate them with comma: ")
+     ingridients.append(element)
+     break
+
+ingr = ', '.join(ingridients)
+print()
+
+time = int(input("how many minutes it take to prepare? "))
+
+print()
+
+difficult = input("how difficult it\'s to prepare? (easy, normal, hard)")
+dif = ''.join(difficult)
+exp = dif.replace(' ','')
+
+print()
+
+print('*** Now you know how to do ***')
+print()
+print(f'\t{recipeName}. \n\nyou will need: {ingr}.\nIt will take you {time} minutes to prepare \nand it\'s {exp} to do')
+
