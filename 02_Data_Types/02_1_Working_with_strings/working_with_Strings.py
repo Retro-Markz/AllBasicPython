@@ -41,3 +41,22 @@ a = '''let\'s try form feed\f
 print(a)
 print()
 
+
+#String functions
+
+#join()
+
+a = 'hello'
+b = 'world'
+res = a + " " +  b 
+print(res)
+
+
+concat = "".join([a, ' ', b])
+print(concat)
+
+#format
+
+res = f'hello {b}'
+print(res)
+
