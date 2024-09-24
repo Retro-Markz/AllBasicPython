@@ -1,6 +1,6 @@
 
 print()
-full_name = "  Marco Cubedo "
+full_name = str(input("enter your name"))
 print(f'User Name: {full_name}')
 userName = full_name.replace(" ", '').lower().strip()
 # userName = userName.lower()
