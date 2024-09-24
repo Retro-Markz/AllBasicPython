@@ -23,6 +23,7 @@ print('He is called "Johnny"')
 # Assigning a string to a variable is done with the variable name followed by an equal sign and the string:
 
 a = "Hello"
+
 print(a)
 
 # Multiline Strings
@@ -52,6 +53,7 @@ print(a)
 
 a = "Hello, World!"
 print(a[1])
+print(a[3])
 
 # Looping Through a String
 # Since strings are arrays, we can loop through the characters in a string, with a for loop.
@@ -59,6 +61,11 @@ print(a[1])
 for x in "banana":
   print(x)
 
+for t in "Alabama":
+  print(t)
+  
+for p in "Pelotillehue":
+  print(p)
 
 # String Length
 # To get the length of a string, use the len() function.
@@ -67,11 +74,15 @@ for x in "banana":
 a = "Hello, World!"
 print(len(a))
 
+we = "SupercalifragilisticoEspiralidoso"
+print(len(we))
+
 # Check String
 # To check if a certain phrase or character is present in a string, we can use the keyword in.
 
 txt = "The best things in life are free!"
 print("free" in txt)
+print("is" in txt)
 
 
 # Use it in an if statement:
@@ -79,6 +90,11 @@ print("free" in txt)
 txt = "The best things in life are free!"
 if "free" in txt:
   print("Yes, 'free' is present.")
+  
+txt = "My mind is burning out"
+if "mind" in txt:
+  print("check you healt, get some rest")
+  
   
   
 # Check if NOT
@@ -226,7 +242,7 @@ print(txt)
 # String Methods
 # Python has a set of built-in methods that you can use on strings.
 
-'''
+methods = '''
 Method	            Description
 capitalize()	      Converts the first character to upper case
 casefold()	        Converts string into lower case
