@@ -12,3 +12,6 @@ print(rest)
 print(mult)
 print(f'{div:.2f}')
 print(div2) 
+
+a, b = 5, 7
+
