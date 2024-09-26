@@ -16,3 +16,23 @@ print()
 
 thistuple = ("apple", "banana", "cherry", "apple", "cherry")
 print(thistuple)
+
+# Tuple Length
+# To determine how many items a tuple has, use the len() function:
+
+thistuple = ("apple", "banana", "cherry")
+print(len(thistuple))
+
+print()
+
+# Create Tuple With One Item
+# To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
+
+
+thistuple = ("apple",)
+print(type(thistuple))
+
+#NOT a tuple
+thistuple = ("apple")
+print(type(thistuple))
+
